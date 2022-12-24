@@ -1,0 +1,822 @@
+*{
+    margin: 0px;
+     padding:0px; 
+}
+
+
+/* ////////////////////////////////////////////////////////////////////// */
+.home{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(2, 2, 2);
+    /* opacity: 0.7; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    z-index: 3;
+}
+.logo{
+    width: 80px;
+    height: 55px;
+    margin-left: 250px;
+    margin-top: 3px;
+    float: left;
+}
+ul{
+list-style: none;
+float: left;
+margin-left: 400px;
+margin-top: 20px;
+}
+.header-items{
+position: relative;
+color: rgb(255, 255, 255);
+display: inline-block;
+margin-left: 40px;
+transition: 1s;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.heads{
+    text-decoration: none;
+    color: aliceblue;
+    /* position: relative; */
+}
+.header-items::before{
+    content: "";
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: blue;
+    position: absolute;
+    bottom: -5px;
+    transition: 0.6s;
+}
+.header-.items:hover{
+    color: white;
+}
+.header-items:hover::before{
+    width: 100%;
+
+}
+/* //////////////////////////////////////////////////////////////////////////////////// */
+
+.first-section{
+    background-image: url(./images/wood-texture-wallpapers-wallpaper-texture-background-patterns-500-1024x640.jpg);
+    background-size: cover;
+    height: 100vh;
+    /* z-index: 0; */
+    position: relative;
+}
+.first-section-overlay{
+position: absolute;
+width: 100%;
+height: 100%;
+background-color: rgba(20,20,22, 0.6);
+/* z-index: 1; */
+}
+
+.first-container{
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.title1{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.title2{
+    color:rgb(204, 149, 68);
+    font-size: 30px;
+   padding-bottom: 10px;
+   
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.getstarted{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 160px;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.learnmore{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 160px;
+    height: 60px;
+    background-color:rgb(31, 154, 236);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.link1{
+    position: relative;
+    text-decoration: none;
+    color: rgb(0, 0, 0)
+}
+.link2{
+    text-decoration: none;
+    color: rgb(255, 255, 255)
+}
+
+button:hover{
+    opacity: 0.8;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+.Weclome-to-website{
+    height: 700px;
+}
+.parent1{
+    overflow: auto;
+    margin-top: 160px;
+}
+.title-section{
+    text-transform: capitalize;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.line{
+    width: 60px;
+    height: 4px;
+    background-color: rgb(38, 83, 141);
+    margin: auto;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+.first-title{
+    font-size: 2em;
+    text-transform: capitalize;
+    padding: 20px 0px;
+    text-align: center;
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.p1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: #adb3a9;
+}
+
+.readmore{
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(52, 196, 196);
+
+}
+
+.icon1{
+    color: #0096c7;
+    font-size: 35px;
+    padding-top: 20px;
+}
+
+.firstbox{
+position: relative;
+width: 320px;
+height: 250px;
+    border: 1px solid  black;
+    float: left;
+    margin-left: 150px;
+    text-align: center;
+
+}
+.middle{
+    width: 320px;
+    height: 250px;
+    border: 1px solid  black;
+    float: left;
+    margin: 0px 30px;
+    text-align: center;
+    position:relative;
+}
+.thirdbox{
+    position: relative;
+   width: 320px;
+    height: 250px;
+    border: 1px solid  black;
+    float: left;
+    text-align: center;
+}
+.firstbox:after, .secondbox::after, .thirdbox::after{
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #313131;
+    position: absolute;
+}
+.firstbox:hover::after, .secondbox:hover:after, .thirdbox:hover:after{
+height: 100%;
+width: 100%;
+transition: 0.5s;
+z-index: -1;
+
+}
+.firstbox:hover .first-title, .secondbox:hover .first-title, .thirdbox:hover .first-title{
+    color: white;
+    transition: 0.5s;
+}
+
+/* ////////////////////////////////////////           /////////////////////////////////////////////////////////// */
+.featured-works{
+    background-color: rgb(224, 230, 226);
+    height: 900px;
+}
+.category{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #2169bc;
+}
+.parent-featured-works{
+    overflow: auto;
+    padding-bottom: 40px;
+    margin-left: 75px;
+}
+.category-overlay{
+    line-height: 30px;
+width: 250px;
+height: 250px;
+text-align: center;
+font-size: 20px;
+padding-top: 70px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+text-transform: capitalize;
+visibility: hidden;
+opacity: 0;
+}
+.backimg{
+    background-image: url(./images/pexels-fauxels-3183132.jpg);
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    margin-top: 25px;
+    z-index: 2;
+}
+.search, .write{
+    width: 40px;
+    height: 40px;
+    background-color: #0096c7;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.icon-overlay{
+    font-size: 20px;
+    color: #4a4e69;
+}
+
+.featured-img{
+    width: 300px;
+    height: 300px;;
+    position: relative;
+    float: left;
+    margin: 20px 50px;
+
+}
+.featured-img:hover .category-overlay{
+visibility: visible;
+position: absolute;
+opacity: 1;
+transition: 1.5s;
+z-index: 5;
+}
+
+
+.featured-img::after{
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+background-color: #a09f9f;
+opacity: 0.7;
+z-index: 2;
+position: absolute;
+}
+
+.featured-img:hover::after{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.section-4{
+    height: 600px;
+}
+.parent-what-we-offer{
+    overflow: auto;
+    margin-left: 40px;
+   
+}
+
+.parent3 .icon2{
+    padding-left: 20px;
+    font-size: 30px;
+    margin-top: 20px;
+    color: rgb(21, 97, 184);
+
+   
+}
+.title5{
+    display: inline;
+    padding-left: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(0, 0, 0);
+
+}
+
+
+.sec4-1{
+    width: 330px;
+    border: 1px solid black;
+    float: left;
+    height: 200px;
+    margin: 20px 50px;
+    position: relative;
+
+}
+
+.icon2{
+    color: rgb(21, 97, 184);
+  font-size: 30px;
+  padding-left: 20px;
+  padding-top: 20px;
+
+}
+.sec4p{
+    padding-left: 20px;
+    padding-top: 30px;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(153, 151, 151);
+}
+
+.sec4-1::after{
+content: "";
+width: 0;
+height: 0;
+top: 0;
+left: 0;
+background-color: #313131;
+position: absolute;
+}
+.sec4-1:hover::after{
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    transition: 1s;
+}
+ .sec4-1:hover .title5{
+    color: white;
+    transition: 1s;
+
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////// section 5 start */
+
+.why-choose-us{
+    height: 600px;
+    background-color: rgb(240, 240, 240);
+}
+.sec5-pic{
+    width: 350px;
+    height: 350px;
+    float: right;
+    margin-right: 150px;
+    margin-top: 100px;
+}
+.choose-us-title{
+    padding-bottom: 10px;
+    padding-left: 60px;
+    font-size: 3rem;
+    padding-top: 90px;
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.line1{
+    width: 80px;
+    height: 5px;
+    background-color: rgb(12, 65, 211);
+    margin-left: 65px;
+}
+
+.sec5p1{
+    display: inline;
+    text-transform: capitalize;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.sec5p2{
+    padding-top: 10px;
+    font-size: 16px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+.check{
+    color: rgb(47, 129, 235);
+    font-size: 20px;
+}
+.content{
+    width: 450px;
+    height: 400px;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+.bullets{
+    font-size: 30px;
+    float: right;
+margin-top: 450px;
+margin-right: -270px;
+}
+.bullet{
+    float: right;
+    margin: 0px 6px;
+    color: rgb(173, 169, 169);
+}
+.bullet:hover{
+    color:rgb(49, 150, 233)
+}
+
+/* /////////////////////////////////////////////////////////////////// */
+
+.sec6{
+    height: 300px;
+    text-align: center;
+    overflow: auto;
+    background-image: url(./images/pexels-bich-tran-669996.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.sec6-overlay{
+    position: absolute;
+    background-color: rgba(20,20,20, 0.7);
+    width: 100%;
+    height: 100%;
+}
+.sec6-1{
+    width: 200px;
+    height: 150px;
+    float: left;
+    margin-left: 100px;
+    margin-top: 80px;
+}
+.sec6-title{
+    color: white;
+    font-size: 35px;
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.sec6p{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.icon4{
+    font-size: 30px;
+    color: rgb(67, 219, 219);
+    padding-top: 20px;
+    padding-bottom: 15px;
+
+}
+/* ///////////////////////////////////////////////////////////////// */
+.pricing-table{
+    height: 700px;
+    text-transform: capitalize;
+    overflow: auto;
+}
+.sec7-1{
+    width: 270px;
+    height: 320px;
+    border: 1px solid #a09f9f;
+    text-align: center;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    float: left;
+    margin-top: 50px;
+    margin-left: 140px;
+    position: relative;
+    z-index: 2;
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid rgb(27, 139, 184);
+    margin: auto;
+}
+.price{
+    font-size: 50px;
+    padding-top: 5px;
+}
+.price1{
+    font-size: 15px;
+}
+.sec7h{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.sec7-content{
+    padding-bottom: 30px;
+    line-height: 30px;
+}
+.sec7btn{
+    width: 150px;
+    height: 20px;
+    border: 1px solid rgb(20, 93, 153);
+text-transform: capitalize;
+margin: auto;
+}
+
+.sec7-1::after{
+content: "";
+width: 100%;
+height: 0;
+top: 0;
+left: 0;
+position: absolute;
+background-color: rgba(82, 82, 82, 0.6);
+
+}
+.sec7-1:hover::after{
+    height: 100%;
+    width: 100%;
+transition: 1s;
+z-index: -1;
+}
+.sec7-1:hover .circle, .sec7-1:hover .sec7h{
+    color: rgb(160, 36, 36);
+    transition: 1s;
+}
+/* ///////////////////////////////////////////////////    //////////////////////////////////////////////// */
+
+.sec8{
+    height: 300px;
+    background-image: url(./images/pexels-mads-thomsen-2739013.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    overflow: auto;
+}
+.sec8-1{
+    width: 500px;
+    height: 200px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+text-transform: capitalize;
+float: left;
+margin: 50px 60px;
+}
+.img-circle{
+    border: 1px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    padding-left: 60px;
+    display: inline;
+}
+.img2{
+   height: 70px;
+   width: 70px;
+   margin-top: 50px;
+   border-radius: 50%;
+}
+.img-details{
+ margin-top: -65px;
+    margin-left: 135px;
+width: 300px;
+height: 50px;
+}
+.job{
+    color:#0077b6;
+}
+.description{
+    padding-left: 60px;
+    padding-top: 20px;
+}
+
+/* //////////////////////////////////////////     ///////////////////////////////////////////////// */
+
+.team-container{
+height: 300px;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+}
+.team-content{
+    overflow: auto;
+}
+
+.team-items{
+    background-color: rgb(184, 182, 182);
+    float: left;
+    width: 29%;
+    text-align: center;
+    padding: 14px 12px;
+    position: relative;
+}
+.middle-team{
+margin: 0px 3%;
+}
+.team-img{
+    margin: auto;
+    width: 90%;
+    position: relative;
+}
+.team-img img{
+width: 100%;
+}
+.icons{
+    top: 0;
+    right: 0;
+    position: absolute
+}
+
+.team-img a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: rgb(43, 169, 207);
+    line-height: 40px;
+}
+.team-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(82, 82, 82, 0.6);
+    visibility: hidden;
+    opacity: 0;
+}
+.team-items:hover .team-overlay{
+    visibility: visible;
+    opacity: 1;
+}
+.team-items::after{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgb(167, 165, 165);
+    opacity: 0.6;
+    position: absolute;
+}
+.team-items:hover:after{
+    height: 100%;
+    width: 100%;
+    transition: 1s;
+}
+.team-items:hover .team-player-title{
+    color: white;
+    transition: 1s;
+}
+.team-items:hover .team-player-text{
+    color: rgb(23, 85, 177);
+    transition: 1s;
+}
+
+/* ////////////////////////////////////////////                  //////////////////////////////////////////// */
+.news-container{
+    overflow: auto;
+    margin: auto;
+    padding-top: 6%;
+    width: 90%;
+}
+.news-info{
+    width: 260px;
+    float: left;
+    height: 500px;
+    padding-left: 25px;
+    position: relative;
+    margin: auto;
+
+}
+
+.news-info::after{
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #90e0ef;
+    opacity: 0.4;
+    transition: 1s;
+    position: absolute;
+}
+
+.news-info:hover::after{
+height: 100%;
+width: 100%;
+}
+
+.icon-news{
+    padding: 20px 10px;
+    color: rgb(42, 132, 206);
+}
+.middle-news{
+    margin: 0 14%;
+}
+.news-title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 10px;
+}
+.news-p{
+    padding-bottom: 20px;
+}
+.news-link{
+    color: rgb(31, 31, 121);
+text-decoration: none;
+font-size: 20px;
+text-transform: capitalize;
+}
+/* /////////////////////////////////////////////////      section 10          /////////////////////////////////////////////////// */
+
+.sec11{
+    background-color: rgb(75, 75, 75);
+    height: 300px;
+}
+
+.sec11-info{
+    width: 500px;
+    height: 250px;
+    margin: auto;
+    padding-top: 30px;
+
+}
+.pg{
+    text-align: center;
+}
+.icons-circles{
+    width: 450px;
+    height: 60px;
+    margin: auto;
+
+
+}
+.circles{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    float: left;
+    background-color: #219ebc;
+    margin:0px 10px;
+
+}
+.last2, .last4,.last5,.last6{
+    font-size: 20px;
+    padding: 17px 13px 18px 20px;
+    color: white;
+    cursor: pointer;
+}
+.last3{
+    font-size: 20px;
+    padding: 18px 16px 20px 17px;
+    color: white;
+    cursor: pointer;
+}
+.last1{
+    font-size: 20px;
+    padding: 18px 16px 30px 20px;
+    color: white;
+    cursor: pointer;
+}
+.circles:hover{
+    background-color: #1e87a1;
+    transition: 0.5s;
+}
+.copyright{
+    padding-top: 10px;
+    color: rgb(148, 146, 146);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
